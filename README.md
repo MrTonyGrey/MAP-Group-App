@@ -9,7 +9,7 @@ Group members: Anthony Gordon, Daijon Bereola-Carson, Kamryn Cutler, Justin Stew
 
 ## Overview
 ### Description
-We are developing an app that will allow people to search and explore Black owned businesses in their area. They will have a profile and be able to favorite businesses as well as leave reviews.
+Allows users to search and explore Black owned businesses in their area. They will have a profile and be able to favorite businesses as well as leave reviews.
 
 ### App Evaluation
 [Evaluation of your app across the following attributes]
@@ -17,8 +17,8 @@ We are developing an app that will allow people to search and explore Black owne
 - **Mobile:**
 - **Story:**
 - **Market:**
-- **Habit:**
-- **Scope:**
+- **Habit:** This app could be used whenever a user wants to find a black business they want to support, shop, or eat at.
+- **Scope:** 
 
 ## Product Spec
 
@@ -26,8 +26,13 @@ We are developing an app that will allow people to search and explore Black owne
 
 **Required Must-have Stories**
 
-* [fill in your required user stories here]
-* ...
+* User can login to their account
+* User can register an account
+* User is able to locate top ten black-owned businesses in their area by rating
+* User is able to locate black-owned businesses by category
+* User is able to locate black-owned businesses by proximity
+* User is able to adjust location preferences
+* User is able to locate black-owned businesses by price
 
 **Optional Nice-to-have Stories**
 
@@ -36,20 +41,42 @@ We are developing an app that will allow people to search and explore Black owne
 
 ### 2. Screen Archetypes
 
-* [list first screen here]
-   * [list associated required story here]
-   * ...
-* [list second screen here]
-   * [list associated required story here]
-   * ...
+Register
+- User can register a new account
+Login
+- User can login to their account
+Spotlight (Stream)
+- Users can scroll through business options based on price, 
+      proximity, category 
+- Users can favorite businesses they like
+Search (Maps)
+- User can search businesses based on price, location, category
+- User can view list of businesses they searched for
+- User can click on business and view Details
+Favorites (Stream)
+- User can scroll through a list of their favorite businesses
+- Users can click on one of the businesses in the list
+Business (Details)
+- User can view a businesses Hours, Address, and Phone Number
+- User can click on comment button to leave a comment
+Reviews (Creation)
+- User can create reviews to leave for businesses.
+Settings
+- User can view their basic information (name, email)
+- User can see the current version of their app
+- User can view and change their location
+- User can change themes
+- User can view or change their email
+- User can view, modify, or clear search history
 
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
 
-* [fill out your first tab]
-* [fill out your second tab]
-* [fill out your third tab]
+* Spotlight
+* Favorite
+* Search
+* Profile
 
 **Flow Navigation** (Screen to Screen)
 
