@@ -41,27 +41,27 @@ Allows users to search and explore Black owned businesses in their area. They wi
 
 ### 2. Screen Archetypes
 
-Register
+**Register**
 - User can register a new account
-Login
+**Login**
 - User can login to their account
-Spotlight (Stream)
+**Spotlight (Stream)**
 - Users can scroll through business options based on price, 
       proximity, category 
 - Users can favorite businesses they like
-Search (Maps)
+**Search (Maps)**
 - User can search businesses based on price, location, category
 - User can view list of businesses they searched for
 - User can click on business and view Details
-Favorites (Stream)
+**Favorites (Stream)**
 - User can scroll through a list of their favorite businesses
 - Users can click on one of the businesses in the list
-Business (Details)
+**Business (Details)**
 - User can view a businesses Hours, Address, and Phone Number
 - User can click on comment button to leave a comment
-Reviews (Creation)
+**Reviews (Creation)**
 - User can create reviews to leave for businesses.
-Settings
+**Settings**
 - User can view their basic information (name, email)
 - User can see the current version of their app
 - User can view and change their location
