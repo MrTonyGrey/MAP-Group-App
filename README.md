@@ -13,7 +13,7 @@ Allows users to search and explore Black owned businesses in their area. They wi
 
 ### App Evaluation
 [Evaluation of your app across the following attributes]
-- **Category:**
+- **Category:** Lifestyle / Navigation
 - **Mobile:**
 - **Story:**
 - **Market:**
