@@ -5,52 +5,111 @@
 //  Created by Justin Stewart on 4/6/21.
 //
 
-import UIKit
+//import UIKit
+//import Moya
+//import CoreLocation
 
-@main
+//@main
+
+import UIKit
+import Moya
+import CoreLocation
+
+@UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    
+
     let window = UIWindow()
     let locationService = LocationService()
     let storyboard = UIStoryboard(name: "Main", bundle: nil)
-
-
+    let service = MoyaProvider<YelpService.BusinessesProvider>()
+    let jsonDecoder = JSONDecoder()
+    var navigationController: UINavigationController?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        
+
+        jsonDecoder.keyDecodingStrategy = .convertFromSnakeCase
+
+        locationService.didChangeStatus = { [weak self] success in
+            if success {
+                self?.locationService.getLocation()
+            }
+        }
+
+        locationService.newLocation = { [weak self] result in
+            switch result {
+            case .success(let location):
+                self?.loadBusinesses(with: location.coordinate)
+            case .failure(let error):
+                assertionFailure("Error getting the users location \(error)")
+            }
+        }
+
         switch locationService.status {
-            case .notDetermined, .denied, .restricted:
-                    let locationViewController = storyboard.instantiateViewController(withIdentifier: "LocationViewController") as? LocationViewController
-                    locationViewController?.delegate = self
-                    window.rootViewController = locationViewController
-                default:
-                    let nav = storyboard
-                        .instantiateViewController(withIdentifier: "RestaurantNavigationController") as? UINavigationController
-                    self.navigationController = nav
-                    window.rootViewController = nav
-                    locationService.getLocation()
-                    (nav?.topViewController as? RestaurantTableViewController)?.delegete = self
-                }
-                window.makeKeyAndVisible()
+        case .notDetermined, .denied, .restricted:
+            let locationViewController = storyboard.instantiateViewController(withIdentifier: "LocationViewController") as? LocationViewController
+            locationViewController?.delegate = self
+            window.rootViewController = locationViewController
+        default:
+            let nav = storyboard
+                .instantiateViewController(withIdentifier: "RestaurantNavigationController") as? UINavigationController
+            self.navigationController = nav
+            window.rootViewController = nav
+            locationService.getLocation()
+            (nav?.topViewController as? RestaurantTableViewController)?.delegete = self
+        }
+        window.makeKeyAndVisible()
         
         return true
     }
 
-    // MARK: UISceneSession Lifecycle
-
-    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
-        // Called when a new scene session is being created.
-        // Use this method to select a configuration to create the new scene with.
-        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
+    private func loadDetails(for viewController: UIViewController, withId id: String) {
+        service.request(.details(id: id)) { [weak self] (result) in
+            switch result {
+            case .success(let response):
+                guard let strongSelf = self else { return }
+                if let details = try? strongSelf.jsonDecoder.decode(Details.self, from: response.data) {
+                    let detailsViewModel = DetailsViewModel(details: details)
+                    (viewController as? DetailsFoodViewController)?.viewModel = detailsViewModel
+                }
+            case .failure(let error):
+                print("Failed to get details \(error)")
+            }
+        }
     }
 
-    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
-        // Called when the user discards a scene session.
-        // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-        // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+    private func loadBusinesses(with coordinate: CLLocationCoordinate2D) {
+        service.request(.search(lat: coordinate.latitude, long: coordinate.longitude)) { [weak self] (result) in
+            guard let strongSelf = self else { return }
+            switch result {
+            case .success(let response):
+                let root = try? strongSelf.jsonDecoder.decode(Root.self, from: response.data)
+                let viewModels = root?.businesses
+                    .compactMap(RestaurantListViewModel.init)
+                    .sorted(by: { $0.distance < $1.distance })
+                if let nav = strongSelf.window.rootViewController as? UINavigationController,
+                    let restaurantListViewController = nav.topViewController as? RestaurantTableViewController {
+                    restaurantListViewController.viewModels = viewModels ?? []
+                } else if let nav = strongSelf.storyboard
+                    .instantiateViewController(withIdentifier: "RestaurantNavigationController") as? UINavigationController {
+                    strongSelf.navigationController = nav
+                    strongSelf.window.rootViewController?.present(nav, animated: true) {
+                        (nav.topViewController as? RestaurantTableViewController)?.delegete = self
+                        (nav.topViewController as? RestaurantTableViewController)?.viewModels = viewModels ?? []
+                    }
+                }
+            case .failure(let error):
+                print("Error: \(error)")
+            }
+        }
     }
-
-
 }
 
+extension AppDelegate: LocationActions, ListActions {
+    func didTapAllow() {
+        locationService.requestLocationAuthorization()
+    }
+
+    func didTapCell(_ viewController: UIViewController, viewModel: RestaurantListViewModel) {
+        loadDetails(for: viewController, withId: viewModel.id)
+    }
+}

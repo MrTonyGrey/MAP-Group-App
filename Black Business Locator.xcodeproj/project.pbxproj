@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,7 @@
 		695C69B0262F18F5003469A1 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695C69AF262F18F5003469A1 /* LocationViewController.swift */; };
 		695C69B9262F2069003469A1 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695C69B8262F2069003469A1 /* LocationService.swift */; };
 		695C69BE262F278A003469A1 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 695C69BD262F278A003469A1 /* Podfile */; };
+		695C69C7262F2971003469A1 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695C69C6262F2971003469A1 /* NetworkService.swift */; };
 		C14981E7261CF890004A1CBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14981E6261CF890004A1CBC /* AppDelegate.swift */; };
 		C14981E9261CF890004A1CBC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14981E8261CF890004A1CBC /* SceneDelegate.swift */; };
 		C14981EB261CF890004A1CBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14981EA261CF890004A1CBC /* ViewController.swift */; };
@@ -54,7 +55,8 @@
 		695C69A7262F1847003469A1 /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
 		695C69AF262F18F5003469A1 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		695C69B8262F2069003469A1 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
-		695C69BD262F278A003469A1 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		695C69BD262F278A003469A1 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		695C69C6262F2971003469A1 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		96BC5769CAA6F67980046967 /* Pods-Black Business Locator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Black Business Locator.release.xcconfig"; path = "Target Support Files/Pods-Black Business Locator/Pods-Black Business Locator.release.xcconfig"; sourceTree = "<group>"; };
 		C14981E3261CF890004A1CBC /* Black Business Locator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Black Business Locator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C14981E6261CF890004A1CBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -105,7 +107,6 @@
 				C79678B36499ACA3D86FBCC5 /* Pods-Black Business Locator.debug.xcconfig */,
 				96BC5769CAA6F67980046967 /* Pods-Black Business Locator.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -183,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				695C69B8262F2069003469A1 /* LocationService.swift */,
+				695C69C6262F2971003469A1 /* NetworkService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -429,6 +431,7 @@
 				C14981E9261CF890004A1CBC /* SceneDelegate.swift in Sources */,
 				695C69A8262F1847003469A1 /* LocationView.swift in Sources */,
 				695C6970262F129A003469A1 /* BaseView.swift in Sources */,
+				695C69C7262F2971003469A1 /* NetworkService.swift in Sources */,
 				695C6982262F147A003469A1 /* DetailsFoodViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
