@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class RestaurantTableViewCell: UITableViewCell {
     
@@ -20,9 +21,16 @@ class RestaurantTableViewCell: UITableViewCell {
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+            super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
-    }
+            // Configure the view for the selected state
+        }
+
+    func configure(with viewModel: RestaurantListViewModel){
+        
+        restaurantImageView.af_setImage(withURL: viewModel.imageUrl)
+        restaurantNameLabel.text = viewModel.name
+        locationLabel.text = viewModel.formattedDistance
+        }
 
 }
