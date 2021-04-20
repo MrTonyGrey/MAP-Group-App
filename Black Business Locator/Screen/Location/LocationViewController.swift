@@ -12,7 +12,8 @@ protocol LocationActions: class {
 
 class LocationViewController: UIViewController {
 
-    @IBOutlet weak var locationView: LocationView!
+    
+    @IBOutlet var locationView: LocationView!
     weak var delegate: LocationActions?
 
     override func viewDidLoad() {

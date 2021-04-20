@@ -19,6 +19,7 @@
 		695C69BE262F278A003469A1 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 695C69BD262F278A003469A1 /* Podfile */; };
 		695C69C7262F2971003469A1 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695C69C6262F2971003469A1 /* NetworkService.swift */; };
 		695C69D6262F2D9E003469A1 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695C69D5262F2D9E003469A1 /* Models.swift */; };
+		695C69E2262F3998003469A1 /* DetailsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695C69E1262F3998003469A1 /* DetailsCollectionViewCell.swift */; };
 		C14981E7261CF890004A1CBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14981E6261CF890004A1CBC /* AppDelegate.swift */; };
 		C14981E9261CF890004A1CBC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14981E8261CF890004A1CBC /* SceneDelegate.swift */; };
 		C14981EB261CF890004A1CBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14981EA261CF890004A1CBC /* ViewController.swift */; };
@@ -59,6 +60,7 @@
 		695C69BD262F278A003469A1 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		695C69C6262F2971003469A1 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		695C69D5262F2D9E003469A1 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		695C69E1262F3998003469A1 /* DetailsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsCollectionViewCell.swift; sourceTree = "<group>"; };
 		96BC5769CAA6F67980046967 /* Pods-Black Business Locator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Black Business Locator.release.xcconfig"; path = "Target Support Files/Pods-Black Business Locator/Pods-Black Business Locator.release.xcconfig"; sourceTree = "<group>"; };
 		C14981E3261CF890004A1CBC /* Black Business Locator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Black Business Locator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C14981E6261CF890004A1CBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				695C6979262F1376003469A1 /* DetailsFoodView.swift */,
+				695C69E1262F3998003469A1 /* DetailsCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -437,6 +440,7 @@
 				695C6970262F129A003469A1 /* BaseView.swift in Sources */,
 				695C69C7262F2971003469A1 /* NetworkService.swift in Sources */,
 				695C6982262F147A003469A1 /* DetailsFoodViewController.swift in Sources */,
+				695C69E2262F3998003469A1 /* DetailsCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

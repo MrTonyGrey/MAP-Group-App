@@ -5,11 +5,6 @@
 //  Created by Justin Stewart on 4/6/21.
 //
 
-//import UIKit
-//import Moya
-//import CoreLocation
-
-//@main
 
 import UIKit
 import Moya
