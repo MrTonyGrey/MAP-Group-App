@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33F8D9AB3B0A38D2BD72DF67 /* Pods_Black_Business_Locator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41998C929B52531DE8E68003 /* Pods_Black_Business_Locator.framework */; };
 		695C6970262F129A003469A1 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695C696F262F129A003469A1 /* BaseView.swift */; };
 		695C697A262F1376003469A1 /* DetailsFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695C6979262F1376003469A1 /* DetailsFoodView.swift */; };
 		695C6982262F147A003469A1 /* DetailsFoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695C6981262F147A003469A1 /* DetailsFoodViewController.swift */; };
@@ -15,6 +16,7 @@
 		695C69A8262F1847003469A1 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695C69A7262F1847003469A1 /* LocationView.swift */; };
 		695C69B0262F18F5003469A1 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695C69AF262F18F5003469A1 /* LocationViewController.swift */; };
 		695C69B9262F2069003469A1 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695C69B8262F2069003469A1 /* LocationService.swift */; };
+		695C69BE262F278A003469A1 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 695C69BD262F278A003469A1 /* Podfile */; };
 		C14981E7261CF890004A1CBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14981E6261CF890004A1CBC /* AppDelegate.swift */; };
 		C14981E9261CF890004A1CBC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14981E8261CF890004A1CBC /* SceneDelegate.swift */; };
 		C14981EB261CF890004A1CBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14981EA261CF890004A1CBC /* ViewController.swift */; };
@@ -43,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		41998C929B52531DE8E68003 /* Pods_Black_Business_Locator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Black_Business_Locator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		695C696F262F129A003469A1 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		695C6979262F1376003469A1 /* DetailsFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsFoodView.swift; sourceTree = "<group>"; };
 		695C6981262F147A003469A1 /* DetailsFoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsFoodViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +54,8 @@
 		695C69A7262F1847003469A1 /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
 		695C69AF262F18F5003469A1 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		695C69B8262F2069003469A1 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		695C69BD262F278A003469A1 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		96BC5769CAA6F67980046967 /* Pods-Black Business Locator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Black Business Locator.release.xcconfig"; path = "Target Support Files/Pods-Black Business Locator/Pods-Black Business Locator.release.xcconfig"; sourceTree = "<group>"; };
 		C14981E3261CF890004A1CBC /* Black Business Locator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Black Business Locator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C14981E6261CF890004A1CBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C14981E8261CF890004A1CBC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +70,7 @@
 		C1498204261CF89B004A1CBC /* Black Business LocatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Black Business LocatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1498208261CF89B004A1CBC /* Black_Business_LocatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Black_Business_LocatorUITests.swift; sourceTree = "<group>"; };
 		C149820A261CF89C004A1CBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C79678B36499ACA3D86FBCC5 /* Pods-Black Business Locator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Black Business Locator.debug.xcconfig"; path = "Target Support Files/Pods-Black Business Locator/Pods-Black Business Locator.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33F8D9AB3B0A38D2BD72DF67 /* Pods_Black_Business_Locator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +99,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28AD8EAABAE29A27BB8C9DC2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C79678B36499ACA3D86FBCC5 /* Pods-Black Business Locator.debug.xcconfig */,
+				96BC5769CAA6F67980046967 /* Pods-Black Business Locator.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		30CC5355C71C3425EF37AD11 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				41998C929B52531DE8E68003 /* Pods_Black_Business_Locator.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		695C696E262F125F003469A1 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,10 +190,13 @@
 		C14981DA261CF88F004A1CBC = {
 			isa = PBXGroup;
 			children = (
+				695C69BD262F278A003469A1 /* Podfile */,
 				C14981E5261CF890004A1CBC /* Black Business Locator */,
 				C14981FC261CF89B004A1CBC /* Black Business LocatorTests */,
 				C1498207261CF89B004A1CBC /* Black Business LocatorUITests */,
 				C14981E4261CF890004A1CBC /* Products */,
+				28AD8EAABAE29A27BB8C9DC2 /* Pods */,
+				30CC5355C71C3425EF37AD11 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -223,9 +251,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C149820D261CF89C004A1CBC /* Build configuration list for PBXNativeTarget "Black Business Locator" */;
 			buildPhases = (
+				0FF7CC27154C893D49DEB9DA /* [CP] Check Pods Manifest.lock */,
 				C14981DF261CF890004A1CBC /* Sources */,
 				C14981E0261CF890004A1CBC /* Frameworks */,
 				C14981E1261CF890004A1CBC /* Resources */,
+				F4EEA041C1CDED00CA72A233 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -321,6 +351,7 @@
 			files = (
 				C14981F3261CF89B004A1CBC /* LaunchScreen.storyboard in Resources */,
 				C14981F0261CF89B004A1CBC /* Assets.xcassets in Resources */,
+				695C69BE262F278A003469A1 /* Podfile in Resources */,
 				C14981EE261CF890004A1CBC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,6 +371,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0FF7CC27154C893D49DEB9DA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Black Business Locator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4EEA041C1CDED00CA72A233 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Black Business Locator/Pods-Black Business Locator-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Black Business Locator/Pods-Black Business Locator-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Black Business Locator/Pods-Black Business Locator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C14981DF261CF890004A1CBC /* Sources */ = {
@@ -529,6 +602,7 @@
 		};
 		C149820E261CF89C004A1CBC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C79678B36499ACA3D86FBCC5 /* Pods-Black Business Locator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -548,6 +622,7 @@
 		};
 		C149820F261CF89C004A1CBC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96BC5769CAA6F67980046967 /* Pods-Black Business Locator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

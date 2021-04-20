@@ -244,7 +244,7 @@
         <!--Location View Controller-->
         <scene sceneID="ktY-zJ-LH5">
             <objects>
-                <viewController id="6hd-WJ-fZB" customClass="LocationViewController" customModule="Black_Business_Locator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LocationViewController" id="6hd-WJ-fZB" customClass="LocationViewController" customModule="Black_Business_Locator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ldq-rh-t85" customClass="LocationView" customModule="Black_Business_Locator" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
