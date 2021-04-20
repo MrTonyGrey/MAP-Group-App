@@ -14,6 +14,7 @@
 		695C6999262F16AA003469A1 /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695C6998262F16AA003469A1 /* RestaurantTableViewCell.swift */; };
 		695C69A8262F1847003469A1 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695C69A7262F1847003469A1 /* LocationView.swift */; };
 		695C69B0262F18F5003469A1 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695C69AF262F18F5003469A1 /* LocationViewController.swift */; };
+		695C69B9262F2069003469A1 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695C69B8262F2069003469A1 /* LocationService.swift */; };
 		C14981E7261CF890004A1CBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14981E6261CF890004A1CBC /* AppDelegate.swift */; };
 		C14981E9261CF890004A1CBC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14981E8261CF890004A1CBC /* SceneDelegate.swift */; };
 		C14981EB261CF890004A1CBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14981EA261CF890004A1CBC /* ViewController.swift */; };
@@ -49,6 +50,7 @@
 		695C6998262F16AA003469A1 /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
 		695C69A7262F1847003469A1 /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
 		695C69AF262F18F5003469A1 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		695C69B8262F2069003469A1 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		C14981E3261CF890004A1CBC /* Black Business Locator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Black Business Locator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C14981E6261CF890004A1CBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C14981E8261CF890004A1CBC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -152,6 +154,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		695C69B4262F200B003469A1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				695C69B8262F2069003469A1 /* LocationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		C14981DA261CF88F004A1CBC = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +185,7 @@
 		C14981E5261CF890004A1CBC /* Black Business Locator */ = {
 			isa = PBXGroup;
 			children = (
+				695C69B4262F200B003469A1 /* Services */,
 				C14981E6261CF890004A1CBC /* AppDelegate.swift */,
 				695C696E262F125F003469A1 /* Screen */,
 				C14981E8261CF890004A1CBC /* SceneDelegate.swift */,
@@ -341,6 +352,7 @@
 				695C697A262F1376003469A1 /* DetailsFoodView.swift in Sources */,
 				695C6999262F16AA003469A1 /* RestaurantTableViewCell.swift in Sources */,
 				695C69B0262F18F5003469A1 /* LocationViewController.swift in Sources */,
+				695C69B9262F2069003469A1 /* LocationService.swift in Sources */,
 				C14981E9261CF890004A1CBC /* SceneDelegate.swift in Sources */,
 				695C69A8262F1847003469A1 /* LocationView.swift in Sources */,
 				695C6970262F129A003469A1 /* BaseView.swift in Sources */,
