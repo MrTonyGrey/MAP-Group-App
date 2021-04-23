@@ -34,11 +34,6 @@ Allows users to search and explore Black owned businesses in their area. They wi
 * User is able to adjust location preferences
 * User is able to locate black-owned businesses by price
 
-**Optional Nice-to-have Stories**
-
-* [fill in your required user stories here]
-* ...
-
 ### 2. Screen Archetypes
 
 - Register
@@ -107,10 +102,38 @@ Allows users to search and explore Black owned businesses in their area. They wi
 ### [BONUS] Interactive Prototype
 
 ## Schema 
-[This section will be completed in Unit 9]
 ### Models
-[Add table of models]
+| Property  | Type | Description |
+| --------- | ---- | ----------- |
+| objectId | String	| unique id for the user post (default field) \
+| businessTitle | string | title of business being displayed |
+| locationID | number | unique id location coordinates |
+| businessImage | file | image of business being displayed |
+| businessType | string | type of business being displayed |
+
 ### Networking
-- [Add list of network requests by screen ]
+- Register
+  - (CREATE/POST) Create userID in database
+- Login
+  - (READ/GET) Query userID for successful login
+- Spotlight
+  - (READ) User can view featured businesses in their area
+- Reviews
+  - (READ) User can see reviews from other customers
+  - (CREATE). User can create their own review and add pictures with a rating
+- Business Details
+  - (READ) User can view business's location, contact information,  hours, images, and reviews, and rating
+- Search
+  - (READ) - User can search for businesses 
+  - (UPDATE) - User can change the tags for the search
+- Settings
+  - (READ) User can view their settings for the app
+  - (UPDATE) User can change their settings in the app
+- Favorites
+  - (READ) User can view their favorite businesses
+  - (UPDATE) User can update their favorite businesses
+
 - [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+<img src="https://github.com/MrTonyGrey/MAP-Group-App/blob/main/gif-1.gif?raw=true" /> 
+<img src="https://github.com/MrTonyGrey/MAP-Group-App/blob/main/gif-2.gif?raw=true" />
+<img src="https://github.com/MrTonyGrey/MAP-Group-App/blob/main/gif-3.gif?raw=true" />
